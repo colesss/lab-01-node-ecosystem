@@ -11,9 +11,13 @@ describe ('Arithmetic', function() {
   });
 
   it('requires 2 arguments', function() {
-    expect(false).toBe(true);
     let result = arithmetic.add('foo',5);
-    expect(result).toEqual(8);
+    expect(result).toEqual(null);
+  });
+
+  it('can subtract 2 numbers properly', function() {
+    let result = arithmetic.subtract(3, 5);
+    expect(result).toEqual(2);
   });
   
 });
